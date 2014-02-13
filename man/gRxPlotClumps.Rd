@@ -2,8 +2,7 @@
 \alias{gRxPlotClumps}
 \title{gRxPlotClumps}
 \usage{
-  gRxPlotClumps(object, data, seqlens,
-    panelExpr = quote(grid()))
+gRxPlotClumps(object, data, seqlens, panelExpr = quote(grid()))
 }
 \arguments{
   \item{object}{result of gRxCluster}
@@ -17,16 +16,13 @@
   \item{panelExpr}{- an expression to evaluate after
   drawing each panel}
 }
-\value{
-  NULL
-}
 \description{
-  Plot gRxCluster object clumps
+Plot gRxCluster object clumps
 }
 \details{
-  Plot Relative Frequencies of the two classes according to
-  region. Regions typically alternate between clusters and
-  non-clusters on each chromosome.
+Plot Relative Frequencies of the two classes according to
+region. Regions typically alternate between clusters and
+non-clusters on each chromosome.
 }
 \examples{
 x.seqnames <- rep(letters[1:3],each=50)
@@ -41,6 +37,6 @@ gRxPlotClumps(x.res)
 rm( x.seqnames, x.starts, x.lens, x.group, x.kvals, x.res)
 }
 \author{
-  Charles Berry
+Charles Berry
 }
 

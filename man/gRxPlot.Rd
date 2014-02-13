@@ -2,10 +2,9 @@
 \alias{gRxPlot}
 \title{gRxPlot}
 \usage{
-  gRxPlot(object, pi.0 = NULL,
-    method = c("odds", "criticalRegions"), xlim = NULL,
-    main = NULL, xlab = "log odds ratio",
-    breaks = "Sturges", kvals = NULL, ...)
+gRxPlot(object, pi.0 = NULL, method = c("odds", "criticalRegions"),
+  xlim = NULL, main = NULL, xlab = "log odds ratio", breaks = "Sturges",
+  kvals = NULL, ...)
 }
 \arguments{
   \item{object}{either the results of
@@ -31,16 +30,16 @@
   \item{...}{other args to pass to the plotting routine(s)}
 }
 \value{
-  see \code{\link{hist}}
+see \code{\link{hist}}
 }
 \description{
-  Plot Clumps and/or Critical Regions
+Plot Clumps and/or Critical Regions
 }
 \details{
-  The results of a call to \code{\link{gRxCluster}} are
-  plotted. Optionally, with \code{method="criticalRegions"}
-  only the critical regions are plotted or with
-  \code{method="odds"} the log odds only are plotted.
+The results of a call to \code{\link{gRxCluster}} are
+plotted. Optionally, with \code{method="criticalRegions"}
+only the critical regions are plotted or with
+\code{method="odds"} the log odds only are plotted.
 }
 \examples{
 x.seqnames <- rep(letters[1:3],each=500)
@@ -55,10 +54,9 @@ gRxPlot(x.res)
 rm( x.seqnames, x.starts, x.lens, x.group, x.kvals, x.res)
 }
 \author{
-  Charles Berry
+Charles Berry
 }
 \seealso{
-  \code{\link{gRxPlotClumps}} for a more fine grained
-  display
+\code{\link{gRxPlotClumps}} for a more fine grained display
 }
 

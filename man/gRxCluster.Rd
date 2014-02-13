@@ -2,9 +2,9 @@
 \alias{gRxCluster}
 \title{gRxCluster}
 \usage{
-  gRxCluster(object, starts, group, kvals, nperm = 0L,
-    pruneFun = prune.loglik, ..., cutpt.filter.expr,
-    cutpt.tail.expr, tmp.env, sample.id, sample.tab)
+gRxCluster(object, starts, group, kvals, nperm = 0L,
+  pruneFun = prune.loglik, ..., cutpt.filter.expr, cutpt.tail.expr, tmp.env,
+  sample.id, sample.tab)
 }
 \arguments{
   \item{object}{chromosome names or other grouping of
@@ -67,15 +67,15 @@
   of the form \code{sample(group)}.}
 }
 \value{
-  a GRanges object with a special metadata slot, see
-  \code{\link{gRxCluster-object}}
+a GRanges object with a special metadata slot, see
+\code{\link{gRxCluster-object}}
 }
 \description{
-  cluster integration sites - optionally perform the
-  permutations needed to estimate the discoveries expected
-  under a null hypothesis
+cluster integration sites - optionally perform the
+permutations needed to estimate the discoveries expected
+under a null hypothesis
 }
 \author{
-  Charles Berry example inst/ex-gRxCluster.R
+Charles Berry example inst/ex-gRxCluster.R
 }
 

@@ -2,7 +2,7 @@
 \alias{gRxSummary}
 \title{gRxSummary}
 \usage{
-  gRxSummary(object, targetFD = NULL)
+gRxSummary(object, targetFD = NULL)
 }
 \arguments{
   \item{object}{the result of gRxCluster}
@@ -10,19 +10,18 @@
   \item{targetFD}{the critical value target in each tail}
 }
 \value{
-  a list containing the summarized results
+a list containing the summarized results
 }
 \description{
-  Summarize gRxCluster Results
+Summarize gRxCluster Results
 }
 \details{
-  Get the FDR and related data for a run of gRxCluster. By
-  selecting a value for \code{targetFD} that is smaller
-  that what was used in constructing the object, fewer
-  clumps will be included in the computation fo the False
-  Discovery Rate - akin to what would have been obtained
-  from the object if it had been constructed using that
-  value.
+Get the FDR and related data for a run of gRxCluster. By
+selecting a value for \code{targetFD} that is smaller that
+what was used in constructing the object, fewer clumps will
+be included in the computation fo the False Discovery Rate
+- akin to what would have been obtained from the object if
+it had been constructed using that value.
 }
 \examples{
 x.seqnames <- rep(letters[1:3],each=50)
@@ -35,6 +34,6 @@ gRxSummary(x.res)
 rm( x.seqnames, x.starts, x.lens, x.group, x.kvals, x.res)
 }
 \author{
-  Charles Berry
+Charles Berry
 }
 

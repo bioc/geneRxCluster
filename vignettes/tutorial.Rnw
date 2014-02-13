@@ -1,4 +1,4 @@
-% Created 2013-12-24 Tue 10:20
+% Created 2014-02-13 Thu 11:48
 \documentclass{article}
 \usepackage{hyperref}
 
@@ -9,7 +9,7 @@
 \hypersetup{
   pdfkeywords={},
   pdfsubject={},
-  pdfcreator={Emacs 24.3.1 (Org mode 8.2.3c)}}
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.5h)}}
 \begin{document}
 
 \maketitle
@@ -25,7 +25,9 @@ sources. Possibly, the two sources are two different gene therapy
 vectors. In what follows, some simulations are used to create datasets
 to illustrate functions in the package, but it is not necessary to
 follow the details of the simulations to get an understanding of the
-functions.
+functions. More examples and details are given by Supplement 2 of 
+Berry et al \cite{berry2014} available at the \href{http://dx.doi.org/10.1093/bioinformatics/btu035}{Bioinformatics web site}.
+
 \section{Basic Use}
 \label{sec-2}
 
@@ -188,7 +190,7 @@ For each position, the number of sites in the clump is determined:
 clump.site.ns <- rep(c(15,25,40),each=10)
 @ %def
 
-For every position, nearby sites ($<1$ Mbase) are sampled:
+For every position, nearby sites (\(<1\) Mbase) are sampled:
 
 <<keep.source=TRUE>>=
 clump.sites <-
@@ -392,6 +394,12 @@ and false discovery numbers are considered.
 
 
 \begin{thebibliography}{1}
+
+\bibitem{berry2014}
+ Charles C. Berry and Karen E. Ocwieja and Nirvav Malani and Frederic D. Bushman.
+\newblock Comparing DNA site clusters with Scan Statistics.
+\newblock{\em Bioinformatics}, doi: 10.1093/bioinformatics/btu035, 2014. 
+
   
 \bibitem{lawrence2013software}
   Michael Lawrence, Wolfgang Huber, Herv{\'e} Pag{\`e}s, Patrick Aboyoun, Marc
@@ -407,5 +415,5 @@ and false discovery numbers are considered.
   2010.
 
 \end{thebibliography}
-% Emacs 24.3.1 (Org mode 8.2.3c)
+% Emacs 24.3.1 (Org mode 8.2.5h)
 \end{document}
