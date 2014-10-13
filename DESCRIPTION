@@ -1,6 +1,6 @@
 Package: geneRxCluster
 Date: 2013-02-13
-Version: 1.2.0
+Version: 1.3.0
 License: GPL (>= 2)
 Description: Detect Differential Clustering of Genomic Sites such as
         gene therapy integrations.  The package provides some functions
